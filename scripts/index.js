@@ -94,7 +94,7 @@ fetch(apiPeliculas)
       actualizarCorazon();
     }
   })
-  .catch((error) => console.error(error))
+  .catch((error) => console.log(error))
   .finally(() => console.log("proceso finalizado"));
 
 /* ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ */
