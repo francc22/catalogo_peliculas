@@ -1,0 +1,26 @@
+
+[
+    {
+        "id": "1",
+        "nombre": "La Huerfana",
+        "duracion": "1:39",
+        "actores": "Isabelle Fuhrman",
+        "urlTrailer": "https://www.youtube.com/watch?v=g-vFIfWDrv0",
+        "puntuacion": "7",
+        "genero": "terror",
+        "portada": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/eed4qNf174pcT65it1PBbaTTL3x.jpg",
+        "meGusta": "no-me-gusta"
+    },
+    {
+        "id": "2",
+        "nombre": "La abuela",
+        "duracion": "1:41",
+        "actores": "Vera Valdez",
+        "urlTrailer": "https://www.youtube.com/watch?v=NE6YrUzcKeA",
+        "puntuacion": "5.9",
+        "genero": "terror",
+        "portada": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/iWPCNUkSaSFNMu1Gf2slJlWZqe3.jpg",
+        "meGusta": "no-me-gusta"
+    }
+]
+

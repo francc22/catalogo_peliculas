@@ -89,20 +89,16 @@ class Pelicula {
     this._portada = portada;
   }
 
-  get MeGusta(){
+  get MeGusta() {
     return this._meGusta;
   }
 
-  set MeGusta(meGusta){
+  set MeGusta(meGusta) {
     this._meGusta = meGusta;
   }
 
-
-
   obtenerInformacion() {
-    
-    const film =
-        `<div class="grid-item">
+    const film = `<div class="grid-item">
             <div class="card">
                 <img src=${this.Portada} alt="foto"/>
                 <p>${this.Nombre}</p>
@@ -117,7 +113,4 @@ class Pelicula {
           `;
     return film;
   }
-
-  
-  
 }
