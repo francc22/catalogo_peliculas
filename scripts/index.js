@@ -50,7 +50,7 @@ const actualizarCorazon = () => {
 /* ■■■■■■■■■■■■ Obteniendo Peliculas desde una API  ■■■■■■■■■■■ */
 /* ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ */
 
-const apiPeliculas = "/api/peliculas.json";
+const apiPeliculas = "api/peliculas.json";
 let arrayPeliculas = [];
 
 fetch(apiPeliculas)
