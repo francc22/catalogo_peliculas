@@ -46,6 +46,28 @@ const actualizarCorazon = () => {
     localStorage.length == 0 ? "" : localStorage.length;
 };
 
+function mostrarAlerta() {
+  Swal.fire({
+    title: "Login",
+    html: `<input type="text" id="email" class="swal2-input" placeholder="Email">
+         <input type="password" id="password" class="swal2-input" placeholder="Password">`,
+    confirmButtonText: "Enviar",
+    showCancelButton: true,
+    cancelButtonText: "Cancelar",
+  }).then((result) => {
+    if (result.isConfirmed) {
+      const email = document.getElementById("email").value;
+      const password = document.getElementById("password").value;
+      console.log(email, password);
+      Swal.fire({
+        title: "Datos enviados",
+        icon: "success",
+        confirmButtonText: "Aceptar",
+      });
+    }
+  });
+}
+
 /* ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ */
 /* ■■■■■■■■■■■■ Obteniendo Peliculas desde una API  ■■■■■■■■■■■ */
 /* ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ */
@@ -106,15 +128,35 @@ function agregarBorrarFavoritos(boton) {
 
   if (boton.classList.contains("no-me-gusta")) {
     objPelicula.MeGusta = "me-gusta";
+    boton.classList.remove('no-me-gusta');
+    boton.classList.add('me-gusta');
     const jsonPelicula = JSON.stringify(objPelicula);
     almacenarEnStorage(boton.id, jsonPelicula);
+
+    Swal.fire({
+      title: "Pelicula agregada a favoritos",
+      icon: "success",
+      confirmButtonText: "Aceptar",
+      background: "#fffad",
+      backdrop: "#dddfa",
+    });
+
   } else {
     objPelicula.MeGusta = "no-me-gusta";
+    boton.classList.remove('me-gusta');
+    boton.classList.add('no-me-gusta');
     quitarDelStorage(boton.id);
+
+    Swal.fire({
+      title: "Pelicula eliminada de favoritos",
+      icon: "warning",
+      confirmButtonText: "Aceptar",
+      background: "#fffad",
+      backdrop: "#dddfa",
+    });
   }
 
-  location.reload();
-  actualizarCorazon();  
+  actualizarCorazon();
 }
 
 /* ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ */
@@ -122,16 +164,20 @@ function agregarBorrarFavoritos(boton) {
 /* ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ */
 
 function mostrarPopupFavoritos() {
-  let seccion = document.getElementById("peliculasFavoritas");
+  let seccion = document.getElementById("peliculasFavoritas");  
+
+  seccion.innerText = "";
 
   for (let i = 0; i < localStorage.length; i++) {
     let clave = localStorage.key(i);
     let jsonPelicula = localStorage.getItem(clave);
     let objPelicula = JSON.parse(jsonPelicula);
 
-    let div = document.createElement("div");
+    div = document.createElement("div");
     div.innerHTML = `<h3>${objPelicula._nombre}</h3><img src="${objPelicula._portada}"/>`;
 
     seccion.appendChild(div);
   }
+
+  
 }
