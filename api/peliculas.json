@@ -21,6 +21,83 @@
         "genero": "terror",
         "portada": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/iWPCNUkSaSFNMu1Gf2slJlWZqe3.jpg",
         "meGusta": "no-me-gusta"
+    },
+    {
+        "id": "3",
+        "nombre": "El origen",
+        "duracion": "2:15",
+        "actores": "Leonardo DiCaprio",
+        "urlTrailer": "",
+        "puntuacion": "8.2",
+        "genero": "ficcion",
+        "portada": "https://pics.filmaffinity.com/inception-652954101-large.jpg",
+        "meGusta": "no-me-gusta"
+    },
+    {
+        "id": "4",
+        "nombre": "Guason",
+        "duracion": "2:05",
+        "actores": "Joaquin Phoenix",
+        "urlTrailer": "",
+        "puntuacion": "8",
+        "genero": "thriller",
+        "portada": "https://pics.filmaffinity.com/joker-790658206-large.jpg",
+        "meGusta": "no-me-gusta"
+    },
+    {
+        "id": "5",
+        "nombre": "WALL-E",
+        "duracion": "1:59",
+        "actores": "Pixar",
+        "urlTrailer": "",
+        "puntuacion": "6.5",
+        "genero": "animadas",
+        "portada": "https://pics.filmaffinity.com/walloe-973488527-large.jpg",
+        "meGusta": "no-me-gusta"
+    },
+    {
+        "id": "6",
+        "nombre": "Avatar",
+        "duracion": "1:55",
+        "actores": "Zoe Saldana",
+        "urlTrailer": "",
+        "puntuacion": "7.1",
+        "genero": "accion",
+        "portada": "https://pics.filmaffinity.com/avatar-832187025-large.jpg",
+        "meGusta": "no-me-gusta"
+    },
+    {
+        "id": "7",
+        "nombre": "La isla siniestra",
+        "duracion": "2:00",
+        "actores": "Leonardo DiCaprio",
+        "urlTrailer": "",
+        "puntuacion": "7.8",
+        "genero": "suspenso",
+        "portada": "https://pics.filmaffinity.com/shutter_island-215721197-large.jpg",
+        "meGusta": "no-me-gusta"
+    },
+    {
+        "id": "8",
+        "nombre": "El lobo de Wall Street",
+        "duracion": "1:41",
+        "actores": "Leonardo DiCaprio",
+        "urlTrailer": "",
+        "puntuacion": "7.6",
+        "genero": "Drama",
+        "portada": "https://pics.filmaffinity.com/the_wolf_of_wall_street-675195906-large.jpg",
+        "meGusta": "no-me-gusta"
+    },
+    {
+        "id": "9",
+        "nombre": "300",
+        "duracion": "2:20",
+        "actores": "Gerard Butler",
+        "urlTrailer": "",
+        "puntuacion": "6.9",
+        "genero": "accion",
+        "portada": "https://pics.filmaffinity.com/300-177205452-large.jpg",
+        "meGusta": "no-me-gusta"
     }
 ]
 
